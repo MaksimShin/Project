@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+div.container {
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+header {
+    position: relative;
+    background: linear-gradient(-43deg,#2f2f2f, #202020);
+    padding: 80px 0px;
+    border-bottom-right-radius: 100px;
+    margin-bottom: 80px;
+}
+
+.header-video{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-bottom-right-radius: 100px;
+    opacity: 0.4;
+}
+
+header .container{
+    position: relative;
+    z-index: 1;
+}
+
+.header-row{
+    display: flex;
+    column-gap: 60px;
+    align-items: center;
+}
+
+.header-row > img{
+    border-radius: 80px;
+    outline: 1px solid #000;
+}
+
+.header-text{
+    color: #fff;
+}
+
+.header-text p{
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.header-btns{
+    display: flex;
+    column-gap: 20px;
+}
+
+.header-btns > a{
+    height: 48px;
+    padding: 15px 25px 0px 25px;
+    border-radius: 8px; 
+    line-height: 1;
+    color: #fff;
+}
+
+.header-btns > .btn1{
+    background-color: #000;
+    transition: all 0.125s ease-in;
+}
+
+.btn1:hover{
+    background-color: #1782cf;
+}
+
+.header-btns > .btn2{
+    border: 1px solid #3b3b3b;
+}
+
+.portfolio{
+    margin-bottom: 80px;
+}
+
+h2{
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    align-items: center;
+}
+
+article{
+    text-align: center;
+}
+
+article img{
+    margin-bottom: 30px;
+    border-radius: 30px;
+    transition: all 0.125s ease-in;
+}
+
+article img:hover{
+    opacity: 0.85;
+}
+
+article h3{
+    font-size: 22px;
+    color: #000;
+    text-decoration: underline;
+}
+
+footer{
+    background: #252525;
+    padding: 80px 0px 0px 0px;
+    border-top-left-radius: 100px;
+}
+
+.contacts h2{
+    color: #fff;
+}
+
+.contacts-row{
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.contacts-row a{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    padding: 30px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    transition: all 1s ease-in;
+}
+
+.filled{
+    background-color: #1e1e1e;
+}
+
+.stroke{
+    border: 1px solid #363636;
+}
+
+.tg:hover{
+    background: linear-gradient(-32deg,#16ABF4, #0078B3);
+}
+
+.tg:visited{
+    background: #27AEF0;
+}
+
+.wa:hover{
+    background: linear-gradient(-32deg,#55CD6C, #2B9F41);
+}
+
+.wa:visited{
+    background: #3FBE57;
+}
+
+.vk:hover{
+    background: linear-gradient(-32deg,#5086C0, #305883);
+}
+
+.vk:visited{
+    background: #41668D;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 30px;
+    background-color: #1e1e1e;
+}
+
+.copyright-text{
+    padding: 30px 0px;
+}

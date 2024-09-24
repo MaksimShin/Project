@@ -1,0 +1,51 @@
+/* Для планшета */
+
+@media(max-width:1080px){
+.header-row{
+column-gap: 30px;
+}
+
+.header-row > img{
+    width: 300px;
+}
+
+h1 {
+font-size: 52px;
+}
+
+.header-text p{
+    font-size: 22px;
+}
+
+h2{
+    font-size: 42px;
+}
+
+}
+
+@media(max-width:757px){
+header {
+    padding: 20px 0px 40px 0px;
+    border-bottom-right-radius: 60px;
+}
+
+.header-row{
+    row-gap: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-row > img{
+    max-width: 100%;
+    width: auto;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.header-text p{
+    font-size: 18px;
+}
+}
