@@ -77,6 +77,10 @@ header .container{
     color: #fff;
 }
 
+.header-btns > .btn2{
+    background-color: #282828;
+}
+
 .header-btns > .btn1{
     background-color: #000;
     transition: all 0.125s ease-in;
@@ -169,25 +173,25 @@ footer{
     background: linear-gradient(-32deg,#16ABF4, #0078B3);
 }
 
-.tg:visited{
-    background: #27AEF0;
-}
-
 .wa:hover{
     background: linear-gradient(-32deg,#55CD6C, #2B9F41);
-}
-
-.wa:visited{
-    background: #3FBE57;
 }
 
 .vk:hover{
     background: linear-gradient(-32deg,#5086C0, #305883);
 }
 
+/*.tg:visited{
+    background: #27AEF0;
+}
+
+.wa:visited{
+    background: #3FBE57;
+}
+
 .vk:visited{
     background: #41668D;
-}
+}*/
 
 .copyright{
     text-align: center;
