@@ -26,6 +26,51 @@ header {
     margin-bottom: 80px;
 }
 
+nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background: #325c8699;
+    z-index: 10;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+    column-gap: 20px;
+}
+
+.navigation a{
+    color: azure;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.link {
+    position: relative;
+    text-decoration: none;
+    color: azure;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: azure;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
 .header-video{
     position: absolute;
     left: 0px;
