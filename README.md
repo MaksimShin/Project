@@ -1,1 +1,1 @@
-https://github.com/MaksimShin?tab=repositories
+https://maksimshin.github.io/Project/
