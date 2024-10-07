@@ -137,6 +137,11 @@ header .container{
 
 .header-btns > .btn2{
     border: 1px solid #3b3b3b;
+    transition: all 0.125ss ease-in;
+}
+
+.btn2:hover{
+    border: 1px solid #16ABF4;
 }
 
 .portfolio{
@@ -246,4 +251,15 @@ footer{
 
 .copyright-text{
     padding: 30px 0px;
+}
+
+.header-text h1{
+    animation: anim 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim {
+0%{opacity: 0.1;transform: scale(2);}
+50%{opacity: 1;transform: scale(1);}
+100%{opacity: 0.1;transform: scale(2);}
 }
