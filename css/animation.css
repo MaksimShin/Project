@@ -1,0 +1,26 @@
+.btn-tf{
+    transition: transform 0.3s ease;
+}
+
+.btn-tf:hover{
+    transform: scale(1.1);
+}
+
+.btn-bounce{
+    transition: transform 0.3s ease;
+}
+
+.btn-bounce:hover {
+    animation: bounce 0.5s; /* Анимация при наведении */
+}
+
+h2{
+    animation: anim 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim {
+0%{opacity: 0.4;transform: scale(1.2);}
+50%{opacity: 1;transform: scale(1);}
+100%{opacity: 0.4;transform: scale(1.2);}
+}

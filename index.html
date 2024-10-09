@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/my.css">
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
 </head>
+
 <body>
     <header>
         <nav>
             <div class="navigation">
-                <a class="link" href="#">Главная</a>
-                <a class="link" href="#portfolio">Портфолио</a>
-                <a class="link" href="#contacts">Контакты</a>
+                <a class="link btn-tf" href="#">Главная</a>
+                <a class="link btn-tf" href="#portfolio">Портфолио</a>
+                <a class="link btn-tf" href="#contacts">Контакты</a>
             </div>
         </nav>
 
@@ -25,11 +30,11 @@
                     <h1>Шишлов<br>Максим</h1>
                     <p>фрилансер, веб-разработчик, создание сайтов</p>
                     <div class="header-btns">
-                        <a href="#portfolio" class="btn1">Портфолио</a>
-                        <a href="#contacts" class="btn2">Контакты</a>
+                        <a href="#portfolio" class="btn1 btn-tf">Портфолио</a>
+                        <a href="#contacts" class="btn2 btn-tf">Контакты</a>
                     </div>
                 </div>
-            </div>  
+            </div>
         </div>
 
         <!--<video class="header-video" autoplay muted loop>
@@ -42,42 +47,39 @@
             <div class="container">
                 <h2>Портфолио</h2>
                 <div class="projects">
-                    <article>
-                        <a href="./projects/project-01.html"><img src="./img/projects/project-01.jpg"
-                        alt=""></a>
+                    <article class="wow animate__animated animate__fadeIn">
+                        <a href="./projects/project-01.html"><img src="./img/projects/project-01.jpg" alt=""></a>
                         <h3><a href="./projects/project-01.html">Сайт магазина мебели</a></h3>
                     </article>
-                    <article>
-                        <a href="./projects/project-02.html"><img src="./img/projects/project-02.jpg"
-                        alt=""></a>
+                    <article class="wow animate__animated animate__slideInUp">
+                        <a href="./projects/project-02.html"><img src="./img/projects/project-02.jpg" alt=""></a>
                         <h3><a href="./projects/project-02.html">Сайт туристического агенства</a></h3>
                     </article>
-                    <article>
-                        <a href="./projects/project-03.html"><img src="./img/projects/project-03.jpg"
-                        alt=""></a>
+                    <article class="wow animate__animated animate__fadeInLeft">
+                        <a href="./projects/project-03.html"><img src="./img/projects/project-03.jpg" alt=""></a>
                         <h3><a href="./projects/project-03.html">Сайт жилого комплекса</a></h3>
                     </article>
                 </div>
             </div>
         </section>
     </main>
-    
+
     <footer>
         <section class="contacts" id="contacts">
             <div class="container">
                 <h2>Контакты</h2>
                 <div class="contacts-row">
-                    <a class="tg stroke" href="#">
+                    <a class="tg stroke btn-bounce" href="#">
                         <img src="./img/contacts/telegram.svg" alt="Telegram">
                         <p>Написать в Telegram</p>
                     </a>
 
-                    <a class="wa filled" href="#">
+                    <a class="wa filled btn-bounce" href="#">
                         <img src="./img/contacts/whatsapp.svg" alt="WhatsApp">
                         <p>Отправить в WhatsApp</p>
                     </a>
 
-                    <a class="vk stroke" href="#">
+                    <a class="vk stroke btn-bounce" href="#">
                         <img src="./img/contacts/vk.svg" alt="Вконтакте">
                         <p>Связаться Вконтакте</p>
                     </a>
@@ -87,11 +89,17 @@
         <section class="copyright">
             <div class="container">
                 <div class="copyright-text">
-                    <p><span style="color: #5d5d5d">© Шишлов Максим<br>HTML верстальщик, создание сайтов Донецк</span></p>
-                    <p></span><br><span style="color: #5886A8">💻Макет сверстан на курсе Интернет программирование</span></p>
+                    <p><span style="color: #5d5d5d">© Шишлов Максим<br>HTML верстальщик, создание сайтов Донецк</span>
+                    </p>
+                    <p></span><br><span style="color: #5886A8">💻Макет сверстан на курсе Интернет
+                            программирование</span></p>
                 </div>
             </div>
         </section>
     </footer>
+    <script>
+        new WOW().init();
+    </script>
 </body>
+
 </html>
