@@ -29,6 +29,9 @@
                 <div class="header-text">
                     <h1>Шишлов<br>Максим</h1>
                     <p>фрилансер, веб-разработчик, создание сайтов</p>
+                    <p>До Нового Года:
+                        <span class="timer" id="counter"></span>
+                    </p>
                     <div class="header-btns">
                         <a href="#portfolio" class="btn1 btn-tf">Портфолио</a>
                         <a href="#contacts" class="btn2 btn-tf">Контакты</a>
@@ -99,6 +102,24 @@
     </footer>
     <script>
         new WOW().init();
+    </script>
+    <script>
+        const eventDate = new Date(`January 1, ${new Date().getFullYear() + 1} 00:00:00`).getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeLeft = eventDate - now;
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            const countdownElement = document.getElementById('counter');
+            countdownElement.textContent = `${days} дней ${hours} часов ${minutes} минут ${seconds} секунд`;
+        }
+
+        const timer = setInterval(updateCountdown, 1000);
     </script>
 </body>
 
